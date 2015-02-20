@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title - SenchaExtJs.com</title>
+         @Styles.Render("~/css/bootstrap.min.css")
+         @Styles.Render("~/css/application.css")
+         @Styles.Render("~/css/main.min.css")
+         @Styles.Render("~/css/font-awesome.min.css")
+         @Scripts.Render("~/js/application.js")
+
+        <style>
+            html {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            body {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            div {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            p {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h3 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h4 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h2 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h1 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+                font-weight: 100;
+                font-size: xx-large;
+            }
+
+            ul.listico {
+                list-style-image: url('images/Vote-512.png') !important;
+                background-position: 0% 0%;
+                background-repeat: repeat;
+            }
+            .stButton .stMainServices {
+                background-image: url(/images/facebook_counter.png);
+                background-repeat: no-repeat;
+                display: inline-block;
+                white-space: nowrap;
+                font-family: Verdana,Helvetica,sans-serif;
+                font-size: 11px;
+                height: 29px !important;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                line-height: 16px;
+                width: auto;
+                position: relative;
+            }
+
+            .stButton .stButton_gradient {
+                background-repeat: repeat-x;
+                border: 1px solid #bfbfbf;
+                padding: 2px;
+                font-family: serif;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                display: inline-block;
+                height: 22px !important;
+                background: #d5d5d5;
+                background: -moz-linear-gradient(top,#d5d5d5 0,#efefef 48%,#fff 94%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#d5d5d5),color-stop(48%,#efefef),color-stop(94%,#fff));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5d5d5',endColorstr='#ffffff',GradientType=0);
+            }
+
+            .btn-register-facebook:before {
+                font-family: FontAwesome;
+                font-size: 20px;
+                content: none !important;
+                display: block;
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                padding: 7px 0;
+                width: 40px;
+                height: 40px;
+                background-color: #2d4373;
+            }
+
+            .fa-check-circle:before {
+                background-image: url(images/checkcircle.png);
+                background-position: 0% 0%;
+                background-repeat: repeat;
+                width: 16px;
+                height: 16px;
+                content: none !important;
+            }
+
+            page-login .login-box {
+                width: 30%;
+            }
+
+            .fa-arrow-circle-o-right:before {
+                content: none !important;
+            }
+
+
+            .fa-user:before {
+                content: none !important;
+            }
+
+
+            .fa-lock:before {
+                content: none !important;
+            }
+
+
+        </style>
+ 
+        
+    </head>
+    <body style="background-color:#C2C2C2;">
+      @*  <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>*@
+        <div id="body" >
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+<footer class="col-lg-12" style="padding:0px;">
+ 
+  <div class="col-lg-12 "style="background:#e0e0e0;">
+  <div class=" container" >
+    <small class="pull-left" style="margin-top: 1%;">Copyright &copy; 2015 Sencha ExtJs Jobs.com, All Rights Reserved.</small>
+    <div class="pull-right">
+      <div class="row" style="margin-top: 1%;">
+        <strong>Bitcoin and Credit Card Processing Powered By:</strong>
+    
+        <a href="#" target="blank" rel="nofollow">
+          <img src="../images/coinbase_logo_transparent_small.png" alt="coinbase logo">
+        </a>
+        <a href="#" target="blank" rel="nofollow">
+          <img width="80px" src="../images/stripe-black.png" alt="stripe logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+</footer>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8a53fb64-d254-4658-ae5b-ea1e512ab48e", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

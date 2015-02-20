@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title - SenchaExtJs.com</title>
+         @Styles.Render("~/css/bootstrap.min.css")
+         @Styles.Render("~/css/application.css")
+         @Scripts.Render("~/js/application.js")
+        <style>
+            html {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            body {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            div {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            p {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h3 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h4 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h2 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+            }
+
+            h1 {
+                font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+                font-weight: 100;
+                font-size: xx-large;
+            }
+
+            ul.listico {
+                list-style-image: url('images/Vote-512.png') !important;
+                background-position: 0% 0%;
+                background-repeat: repeat;
+            }
+
+
+        </style>
+ 
+        
+    </head>
+    <body>
+      @*  <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>*@
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+<footer class="col-lg-12" style="padding:0px;">
+ 
+  <div class="col-lg-12 " style="background:#3f3f3f;">
+  <div class="container">
+  <p class="lead text-center " style="font-size:2em;color:#5c97f1;">Sencha ExtJS. JavaScript. Apps. Developers. Jobs. Contracts.</p>
+  <p>&nbsp;</p>
+    <div class="col-lg-4">
+      <small>
+        <a href='@Url.Action("Sitemap","Account")' target="new">Site Map</a><br>
+        <a href="feed.rss" target="new">SenchaExtJsJobs Jobs RSS Feed</a><br>
+        <a href="feed.atom" target="new">SenchaExtJsJobs Jobs Atom Feed</a><br>
+        <a href="www.twitter.com" target="new" rel="me">SenchaExtJsJobs Jobs on Twitter( &#64;senchaextjsjobs)</a><br>
+        <a href="www.facebook.com" target="new" rel="me">SenchaExtJsJobs.com Facebook Page</a><br>
+      </small>
+    </div>
+    <div class="col-lg-4 ">
+      <small>
+        <a href="https://about.flipboard.com/" target="new" rel="me">Flipboard Curated by SenchaExtJsJobs.com</a><br>
+        <a href="http://www.scoop.it/" target="new" rel="me">Scoop.it Curated by SenchaExtJsJobs.com</a><br>
+        <a href="http://www.slideshare.net/" target="new" rel="me">SenchaExtJsJobs.com on Slideshare</a><br>
+        <a href="http://builtwith.com/" target="new" rel="me">SenchaExtJsJobs.com is Built With</a><br>
+        <a href="http://plus.google.com" target="new" rel="me">SenchaExtJsJobs Jobs on Google+</a><br>
+        <a href="https://coderwall.com/welcome" target="new" rel="me">SenchaExtJsJobs on coderwall</a><br>
+      </small>
+    </div>
+    <div class="col-lg-4 ">
+      <small>
+        <a href="http://www.linkedin.com" target="new" rel="me">SenchaExtJsJobs.com LinkedIn Company Page</a><br>
+        <a href="https://angel.co/" target="new" rel="me">SenchaExtJsJobs.com Angel List Profile</a><br>
+        <a href="https://dealroom.co/" target="new" rel="me">SenchaExtJsJobs.com on dealroom</a><br>
+        <a href="https://www.crunchbase.com/" target="new" rel="me">SenchaExtJsJobs.com on Crunch Base</a><br>
+        <a href='@Url.Action("Policy","Account")'>Privacy Policy</a><br>
+      </small>
+    </div>
+    </div>
+    <p>&nbsp;</p>
+  </div>
+  <div class="col-lg-12 "style="background:#e0e0e0;">
+  <div class=" container" >
+    <small class="pull-left" style="margin-top: 1%;">Copyright &copy; 2015 Sencha ExtJs Jobs.com, All Rights Reserved.</small>
+    <div class="pull-right">
+      <div class="row" style="margin-top: 1%;">
+        <strong>Bitcoin and Credit Card Processing Powered By:</strong>
+    
+        <a href="#" target="blank" rel="nofollow">
+          <img src="images/coinbase_logo_transparent_small.png" alt="coinbase logo">
+        </a>
+        <a href="#" target="blank" rel="nofollow">
+          <img width="80px" src="images/stripe-black.png" alt="stripe logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
